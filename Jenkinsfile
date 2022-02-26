@@ -9,7 +9,7 @@ agent any
 stages{
     stage('Checkout'){
         steps{
-            checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/bansa2/eks-jenfile.git']]])
+            checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/bansa2/eks.git']]])
         }
     }
     stage('terraform init'){
